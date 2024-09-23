@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scisor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="conatiner1">
+        <div class="heading">
+          <ul class="head">
+            <li class="head-list">ROCK</li>
+            <li class="head-list">PAPER</li>
+            <li class="head-list">SCISSORS</li>
+          </ul>
+        </div>
+        <div class="cards">
+          <div class="card1">
+            COMPUTER <br />
+            SCORE <br />
+            <div class="score1">0</div>
+          </div>
+          <div class="card2">
+            YOUR<br />
+            SCORE <br />
+            <div class="score2">0</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container4">
+        <div class="trophy-div">
+          <img id="Trophy" src="./images/celebration.svg" alt="imgg" />
+        </div>
+        <div class="content">
+          <div class="final-content">
+            <div id="hurray-head">HURRAY!!</div>
+            <div id="hurray-content">YOU WON THE GAME</div>
+            <button class="hurray-btn" onclick="playAgain()">PLAY AGAIN</button>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="container2 hide">
+          <div class="tri1"></div>
+          <div class="tri2"></div>
+          <button class="paper button" id="paper"></button>
+          <button class="rock button" id="rock"></button>
+          <button class="scissor button" id="scissor"></button>
+        </div>
+
+        <div class="container3">
+          <div class="box1">
+            <div class="picked1">YOU PICKED</div>
+            <div class="animation1">
+              <div class="win pulse1"></div>
+              <div class="win pulse2"></div>
+              <div class="win pulse3"></div>
+            </div>
+
+            <div class="one"></div>
+          </div>
+
+          <div class="box2">
+            <div class="result">YOU WIN</div>
+            <div class="winLose">AGANIST PC</div>
+            <button class="res-btn" onclick="playAgain()">PLAY AGAIN</button>
+          </div>
+          <div class="box3">
+            <div class="picked2">PC PICKED</div>
+            <div class="animation2">
+              <div class="win pulse1"></div>
+              <div class="win pulse2"></div>
+              <div class="win pulse3"></div>
+            </div>
+            <div class="two"></div>
+          </div>
+        </div>
+      </div>
+      <div class="rules">
+        <div class="rule-book hide">
+          <button id="cross" onclick="fun()">X</button>
+          <h2>Game Rules</h2>
+          <div class="rules-list">
+            <ul>
+              <li class="rule-item">
+                Rock beats scissors, scissors beat paper, and paper beats rock.
+              </li>
+              <li class="rule-item">
+                Agree ahead of time whether you’ll count off “rock, paper,
+                scissors, shoot” or just “rock, paper, scissors.”
+              </li>
+              <li class="rule-item">
+                Use rock, paper, scissors to settle minor decisions or simply
+                play to pass the time
+              </li>
+              <li class="rule-item">
+                If both players lay down the same hand, each player lays down
+                another hand
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="rule-next">
+        <button id="rule-btn" onclick="fun()">RULES</button>
+        <button id="next" onclick="nextButton()">NEXT</button>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
