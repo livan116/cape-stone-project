@@ -112,14 +112,14 @@ button{
 
 .tri2{
     position: absolute; 
-    top: 315px;
+    top: 290px;
     width: 0;
     height: 0;
     bottom: 19%;
     align-self: center;
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
-    border-top: 210px solid #8CC461;
+    border-top: 200px solid #8CC461;
     
 }
 
@@ -482,4 +482,14 @@ button:hover{
 
 .hurray-btn:hover{
     transform: scale(1.1);
+}
+
+@media (max-width:600px) {
+    .container2{
+        width: 100%;
+    }
+
+    .conatiner1{
+        width: 100%;
+    }
 }
